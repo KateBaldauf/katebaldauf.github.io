@@ -1,59 +1,1456 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kate Baldauf — Digital strategy & marketing operations</title>
-<meta name="description" content="Selected work in website content, community governance, and marketing operations by Kate Baldauf.">
-<style>
-:root{color-scheme:dark;--bg:#182329;--panel:#202e35;--deep:#121c21;--ink:#eeeae1;--muted:#b3bebe;--line:#415056;--accent:#b5c99d;--accentink:#19271b;--serif:Georgia,'Times New Roman',serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}a{color:inherit;text-underline-offset:5px}button,a,input{ -webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}button{color:inherit}h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.12}h1{font-size:clamp(38px,5.6vw,67px);letter-spacing:-1.6px;margin-bottom:22px}h2{font-size:clamp(29px,4vw,43px);letter-spacing:-.7px}h3{font-size:26px}p{margin-bottom:18px}.wrap{max-width:1100px;margin:auto;padding:0 28px}.skip{position:absolute;left:20px;top:-100px;background:var(--accent);color:var(--deep);padding:12px;z-index:9}.skip:focus{top:10px}header{border-bottom:1px solid var(--line);background:var(--bg)}nav{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:83px}.brand{font:24px var(--serif);text-decoration:none}.navlinks{display:flex;gap:26px;font-size:14px}.navlinks a{text-decoration:none}.navlinks a:hover{color:var(--accent)}.eyebrow{text-transform:uppercase;letter-spacing:2.4px;font-size:12px;font-weight:600;color:var(--accent);margin-bottom:17px}.intro{padding:64px 0 39px;border-bottom:1px solid var(--line)}.intro>p:not(.eyebrow){font-size:20px;max-width:720px;color:var(--muted)}.sectionhead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-top:35px}.sectionhead h2{font-size:30px;margin-bottom:16px}.meta{font-size:13px;color:var(--muted)}.project{display:grid;grid-template-columns:290px 1fr 30px;gap:32px;align-items:center;padding:24px 0;border-bottom:1px solid var(--line);text-decoration:none}.project h3{margin-bottom:8px}.project p{margin-bottom:6px;color:var(--muted)}.project .link{color:var(--accent);font-size:14px;display:inline-block;margin-top:9px}.project:hover .link{text-decoration:underline}.project:hover .thumb{border-color:var(--accent)}.thumb{height:172px;background:var(--deep);border:1px solid var(--line);border-radius:7px;overflow:hidden;position:relative}.brewthumb{background:linear-gradient(90deg,#101b20cc,#101b2040),url('assets/taproom.png') center/cover;display:flex;flex-direction:column;justify-content:end;padding:20px}.brewthumb strong{font:29px/1.08 var(--serif);max-width:190px}.thumb small{font-size:11px;letter-spacing:1px}.channelthumb{display:grid;grid-template-columns:55px 1fr}.rail{background:#0e171c;padding:17px;color:var(--accent)}.minirows{padding:16px;font-size:12px;color:#b6c2c8;line-height:1.85}.minirows strong{color:var(--ink)}.storethumb{background:#d8d6c9;color:#25322d;padding:19px}.storethumb strong{font:28px/1.05 var(--serif);display:block;width:190px;margin:13px 0}.storethumb small{border-bottom:1px solid #7a8677;padding-bottom:8px;display:block}.about{display:grid;grid-template-columns:1fr 1.7fr;gap:48px;padding:52px 0}.about p{color:var(--muted)}footer{border-top:1px solid var(--line);padding:23px 0 35px;color:var(--muted);font-size:13px}.footerline{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.case{padding-top:34px}.back{font-size:14px;color:var(--muted);display:inline-block;margin-bottom:28px}.casehead{max-width:820px}.casehead h1{font-size:clamp(36px,5vw,58px)}.lead{font-size:19px;color:var(--muted)}.facts{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;margin:27px 0 32px;padding:19px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:14px}.facts strong{display:block;color:var(--accent);margin-bottom:4px}.demo-label{font-size:12px;color:var(--muted);text-align:right;margin:8px 0 19px}.event{border:1px solid var(--line);border-radius:9px;overflow:hidden;background:var(--deep);transition:max-width .25s;margin:auto}.eventnav{padding:17px 25px;display:flex;justify-content:space-between;font-size:13px;letter-spacing:1px}.eventhero{background:linear-gradient(90deg,#10181dd9,#10181d40),url('assets/taproom.png') center/cover;padding:55px 30px 28px;min-height:290px}.eventhero h2{font-size:46px;max-width:450px;margin:0 0 16px}.eventhero p{max-width:420px}.essentials{background:#e5e3d9;color:#1f292b;padding:16px 20px;display:flex;gap:22px;justify-content:space-between;border-radius:5px;font-size:14px;font-weight:600;transition:box-shadow .2s}.eventactions{display:flex;gap:15px;padding:22px 30px;flex-wrap:wrap}.button{display:inline-block;text-decoration:none;background:var(--accent);color:var(--accentink);border:1px solid var(--accent);border-radius:5px;padding:11px 18px;font-weight:600;font-size:14px}.button.secondary{background:transparent;color:var(--ink);border-color:#7d8f90}.button:hover{filter:brightness(1.1)}.highlight{outline:3px solid var(--accent);outline-offset:5px}.walktoggle{margin:3px 0 22px}.walk{border:1px solid var(--line);border-radius:7px;padding:25px;background:var(--panel);margin-bottom:26px}.walk h2{font-size:29px;margin-bottom:20px}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:21px}.tabs button{background:transparent;border:1px solid var(--line);padding:10px 15px;border-radius:5px;font-size:14px}.tabs button[aria-pressed=true]{background:var(--accent);color:var(--accentink);border-color:var(--accent)}.explanation h3{font-size:25px;margin-bottom:10px}.explanation p{max-width:800px;margin-bottom:0;color:var(--muted)}.viewerbar{display:flex;gap:8px;align-items:center;justify-content:end;margin-bottom:13px}.viewerbar button{border:1px solid var(--line);background:transparent;padding:6px 12px;border-radius:4px;font-size:13px}.viewerbar button[aria-pressed=true]{color:var(--accent);border-color:var(--accent)}.mobile-preview{max-width:375px}.mobile-preview .eventnav span:last-child{display:none}.mobile-preview .eventhero{padding:32px 20px 24px}.mobile-preview .eventhero h2{font-size:35px}.mobile-preview .essentials{flex-direction:column;gap:7px}.mobile-preview .eventactions{padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:10px}.mobile-preview .eventactions button{padding:10px;font-size:13px}.columns{display:grid;grid-template-columns:1fr 1fr;gap:45px;padding:29px 0 36px}.columns h2{font-size:28px}.columns p,.columns li{color:var(--muted)}ul{padding-left:21px}.columns li{margin:9px 0}.caseend{border-top:1px solid var(--line);padding:25px 0 44px;display:flex;justify-content:space-between;gap:20px}.community{display:grid;grid-template-columns:1fr 1.2fr;gap:25px;background:var(--deep);border:1px solid var(--line);padding:28px;border-radius:8px}.community h3{font-size:25px}.channels{list-style:none;padding:0;margin:0}.channels li{padding:11px 14px;border:1px solid var(--line);margin-bottom:8px;border-radius:5px;font-size:14px;display:flex;justify-content:space-between;gap:12px}.channels small{color:var(--accent)}.channels .locked{opacity:.55}.rolecopy{color:var(--muted)}.note{font-size:13px;color:var(--muted);border-left:2px solid var(--accent);padding-left:13px}.store-demo{background:#d9d7cc;color:#26332f;padding:35px;border-radius:8px}.store-demo h2{font-size:38px}.store-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.store-card{padding:23px;background:#eeece3;border:1px solid #9eaa9b;border-radius:5px}.store-card h3{font-size:25px}.store-card p{font-size:14px}.store-card dl{font-size:14px}.store-card dt{font-weight:bold;margin-top:12px}.store-card dd{margin:0}.resume-sheet{max-width:820px;padding-bottom:35px}.resume-sheet h2{font-size:28px;margin-top:30px}.resume-sheet h3{font:600 17px system-ui;margin-bottom:6px}.resume-sheet li{margin-bottom:8px;color:var(--muted)}[hidden]{display:none!important}dialog{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:9px;max-width:500px;width:calc(100% - 36px);padding:28px}dialog::backdrop{background:#000a}dialog h2{font-size:30px}dialog p{color:var(--muted)}.close{float:right;border:1px solid var(--line);background:transparent;border-radius:5px;padding:5px 10px;margin-left:10px}.contactline{display:flex;gap:20px;flex-wrap:wrap}.print-btn{margin-bottom:24px}@media(max-width:700px){.wrap{padding:0 20px}nav{min-height:72px;gap:10px}.brand{font-size:21px}.navlinks{gap:15px;font-size:13px}.intro{padding-top:38px}.intro>p:not(.eyebrow){font-size:18px}.sectionhead .meta{display:none}.project{grid-template-columns:115px 1fr;gap:17px}.project>span:last-child{display:none}.thumb{height:140px}.brewthumb{padding:12px}.brewthumb strong{font-size:22px}.thumb small{font-size:9px}.channelthumb{grid-template-columns:1fr}.rail{display:none}.minirows{padding:10px;font-size:10px}.storethumb{padding:10px}.storethumb strong{font-size:22px;width:auto}.project h3{font-size:25px}.project p{font-size:14px}.project .link{font-size:13px}.about,.columns,.community{grid-template-columns:1fr;gap:15px}.about{padding:35px 0}.facts{grid-template-columns:1fr;gap:15px}.eventhero{padding:35px 20px 24px}.eventhero h2{font-size:36px}.essentials{flex-direction:column;gap:7px}.eventnav{padding:15px 20px}.eventnav span:last-child{display:none}.eventactions{padding:20px}.walk{padding:20px}.tabs button{flex:1;padding:9px;font-size:13px}.store-demo{padding:20px}.store-grid{grid-template-columns:1fr}.caseend{flex-direction:column}.community{padding:20px}.viewerbar{justify-content:start}.casehead h1{letter-spacing:-1px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}@media print{body{background:white;color:#182329}header,footer,.print-btn,.skip,.back{display:none}body>*{box-shadow:none}.wrap{max-width:none;padding:0}.resume-sheet li,.meta,.lead{color:#333}a{color:#182329}.case{padding:0}.resume-sheet h1{font-size:32px}.resume-sheet h2{font-size:22px;margin-top:20px}.resume-sheet{font-size:12px}.resume-sheet h3{font-size:14px}.resume-sheet section{break-inside:avoid}}
-</style>
-</head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-<header><nav class="wrap" aria-label="Main"><a class="brand" href="#home">Kate Baldauf</a><div class="navlinks"><a href="#home">Work</a><a href="#about">About</a><a href="#resume">Résumé</a></div></nav></header>
-<main id="main" class="wrap">
-<section id="home" class="view">
-<div class="intro"><p class="eyebrow">Digital strategy / Content / Operations</p><h1>Useful content.<br>Clear systems.</h1><p>I organize information, build practical workflows, and make digital experiences easier to use.</p></div>
-<div class="sectionhead"><h2>Selected work</h2><span class="meta">The work, the decisions, and my contribution.</span></div>
-<a class="project" href="#grainworks"><div class="thumb brewthumb" aria-hidden="true"><small>GRAINWORKS</small><strong>Helping people get together.</strong></div><div><h3>Grainworks</h3><p>Helping people plan a visit</p><p class="meta">Event pages · Content structure · Mobile UX</p><span class="link">Explore case study →</span></div><span aria-hidden="true">↗</span></a>
-<a class="project" href="#miami"><div class="thumb channelthumb" aria-hidden="true"><div class="rail">M<br><br>#<br>◉</div><div class="minirows"><strong>Miami Esports</strong><br># announcements<br># general<br># sport-discussion<br># event-planning<br># moderation</div></div><div><h3>Miami Esports</h3><p>Organizing a 900-member community</p><p class="meta">Permissions · Ownership · Moderation</p><span class="link">Explore case study →</span></div><span aria-hidden="true">↗</span></a>
-<a class="project" href="#flooring"><div class="thumb storethumb" aria-hidden="true"><small>LOCAL STOREFRONTS</small><strong>One network.<br>Local details.</strong></div><div><h3>KW Flooring</h3><p>Supporting local storefront websites</p><p class="meta">Content updates · Multi-site support</p><span class="link">Explore case study →</span></div><span aria-hidden="true">↗</span></a>
-<section class="about" id="about-section"><div><p class="eyebrow">About me</p><h2>A marketing background.<br>A systems mindset.</h2></div><div><p>I’m Kate, a Cincinnati-based marketing and operations professional. At Grainworks, my work connects event promotion, website content, and the practical details that help people plan a visit.</p><p>I’m interested in the decisions behind an experience: what someone needs to know, who keeps that information current, and how to make the next step easier. My background also includes community administration, storefront website support, and healthcare operations.</p><div class="contactline"><a href="mailto:kate.baldauf@gmail.com">Get in touch</a><a href="#resume">View résumé →</a></div></div></section>
-</section>
-<section id="grainworks" class="view case" hidden>
-<a class="back" href="#home">← Selected work</a><div class="casehead"><p class="eyebrow">Grainworks Brewing Company</p><h1>Helping people plan a visit.</h1><p class="lead">Event content has a practical job: help someone understand what’s happening and decide whether to come.</p></div>
-<div class="facts"><div><strong>My contribution</strong>Event page content and implementation, including single-page experiences and supporting band pages.</div><div><strong>Related work</strong>Website hours presentation, mobile spacing, and consistent button sizing.</div></div>
-<div class="viewerbar" aria-label="Preview width"><span class="meta">View layout:</span><button type="button" data-width="wide" aria-pressed="true">Wide</button><button type="button" data-width="mobile" aria-pressed="false">Mobile</button></div>
-<div class="event" id="event-demo"><div class="eventnav"><strong>GRAINWORKS</strong><span>Music / Food / Community</span></div><div class="eventhero"><p class="eyebrow">Illustrative event page</p><h2>Live music<br>at Grainworks</h2><p>Music, pizza, and a reason to get out.</p><div class="essentials" id="essential-target"><span>Saturday · 7 PM</span><span>Pizza available</span><span>West Chester</span></div></div><div class="eventactions"><button class="button" id="visit-target" data-dialog="visit-dialog">Plan your visit</button><button class="button secondary" id="band-target" data-dialog="band-dialog">Meet the band</button></div></div>
-<p class="demo-label">Illustrative reconstruction. Sample event details and generated venue image; not a live event listing.</p>
-<button class="button walktoggle" id="walk-toggle" aria-expanded="false" aria-controls="walk-panel">See my decisions</button>
-<section class="walk" id="walk-panel" hidden><h2>Why organize it this way?</h2><div class="tabs" aria-label="Explore content decisions"><button data-decision="0" aria-pressed="true">1 · Essentials</button><button data-decision="1" aria-pressed="false">2 · Band details</button><button data-decision="2" aria-pressed="false">3 · Next step</button></div><div class="explanation" aria-live="polite" aria-atomic="true"><h3 id="decision-title">Answer the practical questions first.</h3><p id="decision-copy">A visitor needs to know when it is, where to go, and whether food is available. Keeping those details together helps them decide whether to come.</p></div></section>
-<div class="columns"><section><h2>The actual work</h2><p>Most of my Grainworks event pages were one long page. When an event needed additional context, supporting pages—such as band pages—provided more detail.</p><p>I also worked through practical improvements to the existing WordPress site: simplifying the hours display, removing an unnecessary heading, improving mobile spacing, and correcting uneven button heights.</p></section><section><h2>What this demonstrates</h2><ul><li>Organizing content around a visitor’s questions.</li><li>Choosing when to keep information together and when to link out.</li><li>Maintaining an inherited website and refining small usability details.</li></ul><p class="note">The interactive example demonstrates my approach. It is not an archived screenshot or a claim of measured conversion improvement.</p></section></div>
-<div class="caseend"><a href="#home">← All work</a><a href="#miami">Next: community permissions →</a></div>
-</section>
-<section id="miami" class="view case" hidden><a class="back" href="#home">← Selected work</a><div class="casehead"><p class="eyebrow">Miami University Esports Club</p><h1>A community needs<br>clear ownership.</h1><p class="lead">Running a Discord server with approximately 900 people meant deciding who could access each space—and who was responsible for it.</p></div><div class="facts"><div><strong>My contribution</strong>Channel permissions based on club position, sport affiliation, occasion, and other needs.</div><div><strong>Responsibility</strong>Defining who maintained content, who moderated channels, and how people participated.</div></div>
-<div class="walk"><h2>Explore an example access model</h2><p class="rolecopy">Choose a role to see how access and responsibility can change.</p><div class="tabs" aria-label="Example community role"><button data-role="member" aria-pressed="true">Member</button><button data-role="lead" aria-pressed="false">Sport lead</button><button data-role="moderator" aria-pressed="false">Moderator</button></div><div class="community"><div><p class="eyebrow" id="role-label">Member</p><h3 id="role-title">A clear place to participate.</h3><p class="rolecopy" id="role-copy">Members can find announcements and participate in relevant sport discussions without needing access to planning or moderation spaces.</p></div><ul class="channels" id="channel-list" aria-live="polite" aria-atomic="true"></ul></div><p class="demo-label">Reconstructed demonstration; role names and channel rules are illustrative, not an export of the original server.</p></div>
-<div class="columns"><section><h2>More than permissions</h2><p>Access was only one part of the job. The structure also needed people responsible for maintaining content and moderating the spaces they knew best, largely organized by sport.</p><p>That experience connects directly to distributed content ownership: a shared platform, different audiences, and clear responsibilities.</p></section><section><h2>What this demonstrates</h2><ul><li>Matching access to someone’s role and context.</li><li>Assigning content and moderation ownership.</li><li>Supporting engagement within a large community.</li></ul><p class="note">The approximately 900-member figure describes community scale, not growth attributed to my work.</p></section></div><div class="caseend"><a href="#grainworks">← Grainworks</a><a href="#flooring">Next: storefront content →</a></div></section>
-<section id="flooring" class="view case" hidden><a class="back" href="#home">← Selected work</a><div class="casehead"><p class="eyebrow">KW Flooring</p><h1>Shared standards.<br>Local information.</h1><p class="lead">A network of storefront websites needs consistent information while giving each location room for its own details.</p></div><div class="facts"><div><strong>My contribution</strong>Helped update individual storefront websites during a short tenure as Marketing Specialist.</div><div><strong>Scope</strong>Content support within an existing network; I did not own the overall website program.</div></div>
-<div class="store-demo"><p class="eyebrow" style="color:#485c40">Illustrative content structure</p><h2>What needs to stay consistent?</h2><div class="store-grid"><article class="store-card"><h3>Storefront A</h3><p>Local information within a shared structure.</p><dl><dt>Visit</dt><dd>Address, hours, and directions</dd><dt>Explore</dt><dd>Products and services at this location</dd><dt>Contact</dt><dd>The right local team</dd></dl></article><article class="store-card"><h3>Storefront B</h3><p>The same questions; location-specific answers.</p><dl><dt>Visit</dt><dd>Address, hours, and directions</dd><dt>Explore</dt><dd>Products and services at this location</dd><dt>Contact</dt><dd>The right local team</dd></dl></article></div></div><p class="demo-label">Conceptual content model, not actual KW Flooring website screenshots.</p>
-<div class="columns"><section><h2>The experience</h2><p>I contributed website updates in a business with multiple storefront sites. That gave me exposure to the practical work of supporting local information across a broader brand network.</p><p>This is a supporting example of content maintenance and multi-site familiarity. My contribution was narrower than designing or managing the network itself.</p></section><section><h2>How I would review an update</h2><ul><li>Confirm the correct store and source information.</li><li>Check local contact details and destination links.</li><li>Review the update on mobile and desktop.</li><li>Identify who should maintain the information next.</li></ul><p class="note">This checklist explains my approach; it is not presented as a historical KW process I created.</p></section></div><div class="caseend"><a href="#miami">← Miami Esports</a><a href="#resume">View résumé →</a></div></section>
-<section id="resume" class="view case resume-sheet" hidden><a class="back" href="#home">← Selected work</a><p class="eyebrow">Résumé overview</p><h1>Kate Baldauf</h1><p class="lead">Marketing operations · Website content · Community systems</p><p>Cincinnati, OH · <a href="mailto:kate.baldauf@gmail.com">kate.baldauf@gmail.com</a></p><button class="button print-btn" onclick="window.print()">Print / save as PDF</button><section><h2>Experience</h2><h3>Grainworks Brewing Company</h3><p class="meta">Marketing Operations & Creative Manager · March 2022–present</p><ul><li>Manage marketing and event content, including website event pages and supporting band pages.</li><li>Maintain and improve WordPress content presentation, including hours information, mobile spacing, and button consistency.</li><li>Connect event promotion, website information, and practical visitor needs.</li></ul><h3>Cincinnati Children’s</h3><p class="meta">Statline Operator · January 2026–present</p><ul><li>Support emergency communications and EMS intake using established routing and escalation procedures.</li></ul><h3>KW Flooring</h3><p class="meta">Marketing Specialist · December 2021–March 2022</p><ul><li>Contributed updates to individual storefront websites within a multi-brand business.</li></ul><h3>Mercy Health Resource Optimization Center</h3><p class="meta">Nurse Staffing Scheduler · January–December 2021</p><ul><li>Created an Excel-based tool to organize and retrieve staffing-matrix information across seven hospitals.</li></ul><h3>Miami University Esports Club</h3><p class="meta">Marketing Executive, volunteer · 2017–2019</p><ul><li>Administered a Discord community of approximately 900 members, including channel permissions, content ownership, and moderation responsibilities.</li></ul></section><section><h2>Education & tools</h2><p>BS, Business Marketing · Maryville University · 2021<br>Data Science concentration</p><p>WordPress · Basic HTML/CSS · Google Analytics · Mailchimp · Adobe Creative tools · Canva · Excel</p></section></section>
-</main>
-<footer><div class="wrap footerline"><span>Kate Baldauf · Cincinnati, OH</span><a href="mailto:kate.baldauf@gmail.com">kate.baldauf@gmail.com</a></div></footer>
-<dialog id="band-dialog" aria-labelledby="band-title"><button class="close" aria-label="Close band example" data-close>Close</button><p class="eyebrow">Supporting-page example</p><h2 id="band-title">Meet the band</h2><p>A supporting page could hold the artist’s bio, music samples, and other dates. Visitors who want those details can explore without making the main event page longer for everyone.</p><p class="note">This panel represents a supporting band page. It is an illustrative interaction, not an actual artist listing.</p><button class="button" data-close>Back to the event</button></dialog>
-<dialog id="visit-dialog" aria-labelledby="visit-title"><button class="close" aria-label="Close visit example" data-close>Close</button><p class="eyebrow">Next-step example</p><h2 id="visit-title">Plan your visit</h2><p>Once someone is interested, a useful next step connects them to directions, current hours, and food information.</p><p class="note">This example stops here. A published event page would link to verified visitor information.</p><button class="button" data-close>Back to the event</button></dialog>
-<script>
-const views=[...document.querySelectorAll('.view')];
-function route(){let id=location.hash.slice(1)||'home';const about=id==='about';if(about)id='home';if(!views.some(v=>v.id===id))id='home';views.forEach(v=>v.hidden=v.id!==id);document.title=(id==='home'?'Kate Baldauf — Digital strategy & marketing operations':({grainworks:'Grainworks',miami:'Miami Esports',flooring:'KW Flooring',resume:'Résumé'}[id]+' — Kate Baldauf'));if(about){document.getElementById('about-section').scrollIntoView()}else{window.scrollTo(0,0)}if(location.hash){const heading=document.querySelector('#'+id+' h1');heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true})}}
-window.addEventListener('hashchange',route);route();
-const decisions=[['essential-target','Answer the practical questions first.','A visitor needs to know when it is, where to go, and whether food is available. Keeping those details together helps them decide whether to come.'],['band-target','Give extra detail its own place.','Most event pages can stay focused on a single visit. A supporting band page gives interested visitors more context without making everyone scroll through it. Select “Meet the band” to see a simple example.'],['visit-target','Make the next action easy to find.','Once someone is interested, direct them toward practical visitor information. A clear next step connects the event to directions, hours, and food details. Select “Plan your visit” to see what that step could contain.']];
-function decision(i){document.querySelectorAll('.highlight').forEach(e=>e.classList.remove('highlight'));document.getElementById(decisions[i][0]).classList.add('highlight');document.getElementById('decision-title').textContent=decisions[i][1];document.getElementById('decision-copy').textContent=decisions[i][2];document.querySelectorAll('[data-decision]').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.decision===i)))}
-document.querySelectorAll('[data-decision]').forEach(b=>b.addEventListener('click',()=>decision(+b.dataset.decision)));
-document.getElementById('walk-toggle').addEventListener('click',e=>{const p=document.getElementById('walk-panel');p.hidden=!p.hidden;e.currentTarget.setAttribute('aria-expanded',String(!p.hidden));e.currentTarget.textContent=p.hidden?'See my decisions':'Hide decisions';if(!p.hidden)decision(0);else document.querySelectorAll('.highlight').forEach(x=>x.classList.remove('highlight'))});
-document.querySelectorAll('[data-width]').forEach(b=>b.addEventListener('click',()=>{document.getElementById('event-demo').classList.toggle('mobile-preview',b.dataset.width==='mobile');document.querySelectorAll('[data-width]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)))}));
-const roleData={member:['Member','A clear place to participate.','Members can find announcements and participate in relevant sport discussions without needing access to planning or moderation spaces.',['Read','Participate','No access','No access']],lead:['Sport lead','Ownership close to the activity.','A sport lead can maintain relevant discussions and coordinate events. Responsibility is assigned to someone who understands the group.',['Read','Maintain','Coordinate','No access']],moderator:['Moderator','Authority with a defined purpose.','Moderators can manage conversations and access moderation spaces. In practice, permissions can be combined with a sport or leadership role.',['Read','Moderate','No access','Manage']]};
-function role(k){const d=roleData[k];document.getElementById('role-label').textContent=d[0];document.getElementById('role-title').textContent=d[1];document.getElementById('role-copy').textContent=d[2];const list=document.getElementById('channel-list');list.replaceChildren();['announcements','sport-discussion','event-planning','moderation'].forEach((n,i)=>{const li=document.createElement('li');const name=document.createElement('span');name.textContent='# '+n;const access=document.createElement('small');access.textContent=d[3][i];li.append(name,access);li.classList.toggle('locked',d[3][i]==='No access');list.append(li)});document.querySelectorAll('[data-role]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.role===k)))}
-document.querySelectorAll('[data-role]').forEach(b=>b.addEventListener('click',()=>role(b.dataset.role)));role('member');
-document.querySelectorAll('[data-dialog]').forEach(b=>b.addEventListener('click',()=>document.getElementById(b.dataset.dialog).showModal()));document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',()=>b.closest('dialog').close()));
-</script>
-</body></html>
+  <!--
+  KATE'S PORTFOLIO — EDITING MAP
+
+  Use Ctrl+F (Windows) or Cmd+F (Mac) to find these section labels:
+    01 PAGE TITLE AND SEARCH DESCRIPTION
+    02 COLORS AND PAGE STYLING
+    03 TOP NAVIGATION
+    04 HOMEPAGE AND PROJECT CARDS
+    05 ABOUT ME AND CONTACT
+    06 GRAINWORKS CASE STUDY
+    07 MIAMI ESPORTS CASE STUDY
+    08 KW FLOORING CASE STUDY
+    09 RESUME
+    10 FOOTER
+    11 EXAMPLE POP-UP PANELS
+    12 INTERACTIVE BEHAVIOR
+
+  To change wording, edit the text between HTML tags.
+  Keep id, class, data-*, and aria-* attributes unless changing the code too.
+  The brewery image is assets/taproom.png.
+  Grainworks click-through explanations: search EDIT: GRAINWORKS DECISIONS.
+  Miami role descriptions and permissions: search EDIT: MIAMI ROLE EXAMPLES.
+  These comments are notes for you; they do not appear on the website.
+-->
+
+  <!-- 01 PAGE TITLE AND SEARCH DESCRIPTION -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kate Baldauf — Digital strategy & marketing operations</title>
+    <meta
+      name="description"
+      content="Selected work in website content, community governance, and marketing operations by Kate Baldauf."
+    />
+
+    <!-- 02 COLORS AND PAGE STYLING — change the palette in :root below -->
+    <style>
+      /* SITE COLORS — these variables control the shared palette. */
+      :root {
+        color-scheme: dark;
+        --bg: #182329;
+        --panel: #202e35;
+        --deep: #121c21;
+        --ink: #eeeae1;
+        --muted: #b3bebe;
+        --line: #415056;
+        --accent: #b5c99d;
+        --accentink: #19271b;
+        --serif: Georgia, "Times New Roman", serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 90px;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font:
+          16px/1.55 system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+      }
+      a {
+        color: inherit;
+        text-underline-offset: 5px;
+      }
+      button,
+      a,
+      input {
+        -webkit-tap-highlight-color: transparent;
+      }
+      button {
+        font: inherit;
+        cursor: pointer;
+      }
+      button:focus-visible,
+      a:focus-visible,
+      summary:focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 5px;
+      }
+      button {
+        color: inherit;
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: var(--serif);
+        font-weight: 400;
+        line-height: 1.12;
+      }
+      h1 {
+        font-size: clamp(38px, 5.6vw, 67px);
+        letter-spacing: -1.6px;
+        margin-bottom: 22px;
+      }
+      h2 {
+        font-size: clamp(29px, 4vw, 43px);
+        letter-spacing: -0.7px;
+      }
+      h3 {
+        font-size: 26px;
+      }
+      p {
+        margin-bottom: 18px;
+      }
+      .wrap {
+        max-width: 1100px;
+        margin: auto;
+        padding: 0 28px;
+      }
+      .skip {
+        position: absolute;
+        left: 20px;
+        top: -100px;
+        background: var(--accent);
+        color: var(--deep);
+        padding: 12px;
+        z-index: 9;
+      }
+      .skip:focus {
+        top: 10px;
+      }
+      header {
+        border-bottom: 1px solid var(--line);
+        background: var(--bg);
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        min-height: 83px;
+      }
+      .brand {
+        font: 24px var(--serif);
+        text-decoration: none;
+      }
+      .navlinks {
+        display: flex;
+        gap: 26px;
+        font-size: 14px;
+      }
+      .navlinks a {
+        text-decoration: none;
+      }
+      .navlinks a:hover {
+        color: var(--accent);
+      }
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 2.4px;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--accent);
+        margin-bottom: 17px;
+      }
+      .intro {
+        padding: 64px 0 39px;
+        border-bottom: 1px solid var(--line);
+      }
+      .intro > p:not(.eyebrow) {
+        font-size: 20px;
+        max-width: 720px;
+        color: var(--muted);
+      }
+      .sectionhead {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        padding-top: 35px;
+      }
+      .sectionhead h2 {
+        font-size: 30px;
+        margin-bottom: 16px;
+      }
+      .meta {
+        font-size: 13px;
+        color: var(--muted);
+      }
+      .project {
+        display: grid;
+        grid-template-columns: 290px 1fr 30px;
+        gap: 32px;
+        align-items: center;
+        padding: 24px 0;
+        border-bottom: 1px solid var(--line);
+        text-decoration: none;
+      }
+      .project h3 {
+        margin-bottom: 8px;
+      }
+      .project p {
+        margin-bottom: 6px;
+        color: var(--muted);
+      }
+      .project .link {
+        color: var(--accent);
+        font-size: 14px;
+        display: inline-block;
+        margin-top: 9px;
+      }
+      .project:hover .link {
+        text-decoration: underline;
+      }
+      .project:hover .thumb {
+        border-color: var(--accent);
+      }
+      .thumb {
+        height: 172px;
+        background: var(--deep);
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        overflow: hidden;
+        position: relative;
+      }
+      .brewthumb {
+        background:
+          linear-gradient(90deg, #101b20cc, #101b2040),
+          url("assets/taproom.png") center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 20px;
+      }
+      .brewthumb strong {
+        font: 29px/1.08 var(--serif);
+        max-width: 190px;
+      }
+      .thumb small {
+        font-size: 11px;
+        letter-spacing: 1px;
+      }
+      .channelthumb {
+        display: grid;
+        grid-template-columns: 55px 1fr;
+      }
+      .rail {
+        background: #0e171c;
+        padding: 17px;
+        color: var(--accent);
+      }
+      .minirows {
+        padding: 16px;
+        font-size: 12px;
+        color: #b6c2c8;
+        line-height: 1.85;
+      }
+      .minirows strong {
+        color: var(--ink);
+      }
+      .storethumb {
+        background: #d8d6c9;
+        color: #25322d;
+        padding: 19px;
+      }
+      .storethumb strong {
+        font: 28px/1.05 var(--serif);
+        display: block;
+        width: 190px;
+        margin: 13px 0;
+      }
+      .storethumb small {
+        border-bottom: 1px solid #7a8677;
+        padding-bottom: 8px;
+        display: block;
+      }
+      .about {
+        display: grid;
+        grid-template-columns: 1fr 1.7fr;
+        gap: 48px;
+        padding: 52px 0;
+      }
+      .about p {
+        color: var(--muted);
+      }
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 23px 0 35px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .footerline {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .case {
+        padding-top: 34px;
+      }
+      .back {
+        font-size: 14px;
+        color: var(--muted);
+        display: inline-block;
+        margin-bottom: 28px;
+      }
+      .casehead {
+        max-width: 820px;
+      }
+      .casehead h1 {
+        font-size: clamp(36px, 5vw, 58px);
+      }
+      .lead {
+        font-size: 19px;
+        color: var(--muted);
+      }
+      .facts {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 24px;
+        margin: 27px 0 32px;
+        padding: 19px 0;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        font-size: 14px;
+      }
+      .facts strong {
+        display: block;
+        color: var(--accent);
+        margin-bottom: 4px;
+      }
+      .demo-label {
+        font-size: 12px;
+        color: var(--muted);
+        text-align: right;
+        margin: 8px 0 19px;
+      }
+      .event {
+        border: 1px solid var(--line);
+        border-radius: 9px;
+        overflow: hidden;
+        background: var(--deep);
+        transition: max-width 0.25s;
+        margin: auto;
+      }
+      .eventnav {
+        padding: 17px 25px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        letter-spacing: 1px;
+      }
+      .eventhero {
+        background:
+          linear-gradient(90deg, #10181dd9, #10181d40),
+          url("assets/taproom.png") center/cover;
+        padding: 55px 30px 28px;
+        min-height: 290px;
+      }
+      .eventhero h2 {
+        font-size: 46px;
+        max-width: 450px;
+        margin: 0 0 16px;
+      }
+      .eventhero p {
+        max-width: 420px;
+      }
+      .essentials {
+        background: #e5e3d9;
+        color: #1f292b;
+        padding: 16px 20px;
+        display: flex;
+        gap: 22px;
+        justify-content: space-between;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 600;
+        transition: box-shadow 0.2s;
+      }
+      .eventactions {
+        display: flex;
+        gap: 15px;
+        padding: 22px 30px;
+        flex-wrap: wrap;
+      }
+      .button {
+        display: inline-block;
+        text-decoration: none;
+        background: var(--accent);
+        color: var(--accentink);
+        border: 1px solid var(--accent);
+        border-radius: 5px;
+        padding: 11px 18px;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .button.secondary {
+        background: transparent;
+        color: var(--ink);
+        border-color: #7d8f90;
+      }
+      .button:hover {
+        filter: brightness(1.1);
+      }
+      .highlight {
+        outline: 3px solid var(--accent);
+        outline-offset: 5px;
+      }
+      .walktoggle {
+        margin: 3px 0 22px;
+      }
+      .walk {
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        padding: 25px;
+        background: var(--panel);
+        margin-bottom: 26px;
+      }
+      .walk h2 {
+        font-size: 29px;
+        margin-bottom: 20px;
+      }
+      .tabs {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 21px;
+      }
+      .tabs button {
+        background: transparent;
+        border: 1px solid var(--line);
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      .tabs button[aria-pressed="true"] {
+        background: var(--accent);
+        color: var(--accentink);
+        border-color: var(--accent);
+      }
+      .explanation h3 {
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+      .explanation p {
+        max-width: 800px;
+        margin-bottom: 0;
+        color: var(--muted);
+      }
+      .viewerbar {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: end;
+        margin-bottom: 13px;
+      }
+      .viewerbar button {
+        border: 1px solid var(--line);
+        background: transparent;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 13px;
+      }
+      .viewerbar button[aria-pressed="true"] {
+        color: var(--accent);
+        border-color: var(--accent);
+      }
+      .mobile-preview {
+        max-width: 375px;
+      }
+      .mobile-preview .eventnav span:last-child {
+        display: none;
+      }
+      .mobile-preview .eventhero {
+        padding: 32px 20px 24px;
+      }
+      .mobile-preview .eventhero h2 {
+        font-size: 35px;
+      }
+      .mobile-preview .essentials {
+        flex-direction: column;
+        gap: 7px;
+      }
+      .mobile-preview .eventactions {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .mobile-preview .eventactions button {
+        padding: 10px;
+        font-size: 13px;
+      }
+      .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+        padding: 29px 0 36px;
+      }
+      .columns h2 {
+        font-size: 28px;
+      }
+      .columns p,
+      .columns li {
+        color: var(--muted);
+      }
+      ul {
+        padding-left: 21px;
+      }
+      .columns li {
+        margin: 9px 0;
+      }
+      .caseend {
+        border-top: 1px solid var(--line);
+        padding: 25px 0 44px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      .community {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 25px;
+        background: var(--deep);
+        border: 1px solid var(--line);
+        padding: 28px;
+        border-radius: 8px;
+      }
+      .community h3 {
+        font-size: 25px;
+      }
+      .channels {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .channels li {
+        padding: 11px 14px;
+        border: 1px solid var(--line);
+        margin-bottom: 8px;
+        border-radius: 5px;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .channels small {
+        color: var(--accent);
+      }
+      .channels .locked {
+        opacity: 0.55;
+      }
+      .rolecopy {
+        color: var(--muted);
+      }
+      .note {
+        font-size: 13px;
+        color: var(--muted);
+        border-left: 2px solid var(--accent);
+        padding-left: 13px;
+      }
+      .store-demo {
+        background: #d9d7cc;
+        color: #26332f;
+        padding: 35px;
+        border-radius: 8px;
+      }
+      .store-demo h2 {
+        font-size: 38px;
+      }
+      .store-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      .store-card {
+        padding: 23px;
+        background: #eeece3;
+        border: 1px solid #9eaa9b;
+        border-radius: 5px;
+      }
+      .store-card h3 {
+        font-size: 25px;
+      }
+      .store-card p {
+        font-size: 14px;
+      }
+      .store-card dl {
+        font-size: 14px;
+      }
+      .store-card dt {
+        font-weight: bold;
+        margin-top: 12px;
+      }
+      .store-card dd {
+        margin: 0;
+      }
+      .resume-sheet {
+        max-width: 820px;
+        padding-bottom: 35px;
+      }
+      .resume-sheet h2 {
+        font-size: 28px;
+        margin-top: 30px;
+      }
+      .resume-sheet h3 {
+        font: 600 17px system-ui;
+        margin-bottom: 6px;
+      }
+      .resume-sheet li {
+        margin-bottom: 8px;
+        color: var(--muted);
+      }
+      [hidden] {
+        display: none !important;
+      }
+      dialog {
+        background: var(--panel);
+        color: var(--ink);
+        border: 1px solid var(--line);
+        border-radius: 9px;
+        max-width: 500px;
+        width: calc(100% - 36px);
+        padding: 28px;
+      }
+      dialog::backdrop {
+        background: #000a;
+      }
+      dialog h2 {
+        font-size: 30px;
+      }
+      dialog p {
+        color: var(--muted);
+      }
+      .close {
+        float: right;
+        border: 1px solid var(--line);
+        background: transparent;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-left: 10px;
+      }
+      .contactline {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .print-btn {
+        margin-bottom: 24px;
+      } /* MOBILE LAYOUT — applies to screens 700px wide or smaller. */
+      @media (max-width: 700px) {
+        .wrap {
+          padding: 0 20px;
+        }
+        nav {
+          min-height: 72px;
+          gap: 10px;
+        }
+        .brand {
+          font-size: 21px;
+        }
+        .navlinks {
+          gap: 15px;
+          font-size: 13px;
+        }
+        .intro {
+          padding-top: 38px;
+        }
+        .intro > p:not(.eyebrow) {
+          font-size: 18px;
+        }
+        .sectionhead .meta {
+          display: none;
+        }
+        .project {
+          grid-template-columns: 115px 1fr;
+          gap: 17px;
+        }
+        .project > span:last-child {
+          display: none;
+        }
+        .thumb {
+          height: 140px;
+        }
+        .brewthumb {
+          padding: 12px;
+        }
+        .brewthumb strong {
+          font-size: 22px;
+        }
+        .thumb small {
+          font-size: 9px;
+        }
+        .channelthumb {
+          grid-template-columns: 1fr;
+        }
+        .rail {
+          display: none;
+        }
+        .minirows {
+          padding: 10px;
+          font-size: 10px;
+        }
+        .storethumb {
+          padding: 10px;
+        }
+        .storethumb strong {
+          font-size: 22px;
+          width: auto;
+        }
+        .project h3 {
+          font-size: 25px;
+        }
+        .project p {
+          font-size: 14px;
+        }
+        .project .link {
+          font-size: 13px;
+        }
+        .about,
+        .columns,
+        .community {
+          grid-template-columns: 1fr;
+          gap: 15px;
+        }
+        .about {
+          padding: 35px 0;
+        }
+        .facts {
+          grid-template-columns: 1fr;
+          gap: 15px;
+        }
+        .eventhero {
+          padding: 35px 20px 24px;
+        }
+        .eventhero h2 {
+          font-size: 36px;
+        }
+        .essentials {
+          flex-direction: column;
+          gap: 7px;
+        }
+        .eventnav {
+          padding: 15px 20px;
+        }
+        .eventnav span:last-child {
+          display: none;
+        }
+        .eventactions {
+          padding: 20px;
+        }
+        .walk {
+          padding: 20px;
+        }
+        .tabs button {
+          flex: 1;
+          padding: 9px;
+          font-size: 13px;
+        }
+        .store-demo {
+          padding: 20px;
+        }
+        .store-grid {
+          grid-template-columns: 1fr;
+        }
+        .caseend {
+          flex-direction: column;
+        }
+        .community {
+          padding: 20px;
+        }
+        .viewerbar {
+          justify-content: start;
+        }
+        .casehead h1 {
+          letter-spacing: -1px;
+        }
+      } /* REDUCED MOTION — respects the visitor's accessibility setting. */
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        * {
+          transition: none !important;
+        }
+      } /* PRINT LAYOUT — used by the resume Print / save as PDF button. */
+      @media print {
+        body {
+          background: white;
+          color: #182329;
+        }
+        header,
+        footer,
+        .print-btn,
+        .skip,
+        .back {
+          display: none;
+        }
+        body > * {
+          box-shadow: none;
+        }
+        .wrap {
+          max-width: none;
+          padding: 0;
+        }
+        .resume-sheet li,
+        .meta,
+        .lead {
+          color: #333;
+        }
+        a {
+          color: #182329;
+        }
+        .case {
+          padding: 0;
+        }
+        .resume-sheet h1 {
+          font-size: 32px;
+        }
+        .resume-sheet h2 {
+          font-size: 22px;
+          margin-top: 20px;
+        }
+        .resume-sheet {
+          font-size: 12px;
+        }
+        .resume-sheet h3 {
+          font-size: 14px;
+        }
+        .resume-sheet section {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <!-- 03 TOP NAVIGATION — name and menu links -->
+    <header>
+      <nav class="wrap" aria-label="Main">
+        <a class="brand" href="#home">Kate Baldauf</a>
+        <div class="navlinks">
+          <a href="#home">Work</a><a href="#about">About</a><a href="#resume">Résumé</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main" class="wrap">
+      <!-- 04 HOMEPAGE AND PROJECT CARDS — introduction and three project summaries -->
+      <section id="home" class="view">
+        <div class="intro">
+          <p class="eyebrow">Digital strategy / Content / Operations</p>
+          <h1>Useful content.<br />Clear systems.</h1>
+          <p>
+            I organize information, build practical workflows, and make digital experiences easier
+            to use.
+          </p>
+        </div>
+        <div class="sectionhead">
+          <h2>Selected work</h2>
+          <span class="meta">The work, the decisions, and my contribution.</span>
+        </div>
+        <a class="project" href="#grainworks"
+          ><div class="thumb brewthumb" aria-hidden="true">
+            <small>GRAINWORKS</small><strong>Helping people get together.</strong>
+          </div>
+          <div>
+            <h3>Grainworks</h3>
+            <p>Helping people plan a visit</p>
+            <p class="meta">Event pages · Content structure · Mobile UX</p>
+            <span class="link">Explore case study →</span>
+          </div>
+          <span aria-hidden="true">↗</span></a
+        >
+        <a class="project" href="#miami"
+          ><div class="thumb channelthumb" aria-hidden="true">
+            <div class="rail">M<br /><br />#<br />◉</div>
+            <div class="minirows">
+              <strong>Miami Esports</strong><br /># announcements<br /># general<br />#
+              sport-discussion<br /># event-planning<br /># moderation
+            </div>
+          </div>
+          <div>
+            <h3>Miami Esports</h3>
+            <p>Organizing a 900-member community</p>
+            <p class="meta">Permissions · Ownership · Moderation</p>
+            <span class="link">Explore case study →</span>
+          </div>
+          <span aria-hidden="true">↗</span></a
+        >
+        <a class="project" href="#flooring"
+          ><div class="thumb storethumb" aria-hidden="true">
+            <small>LOCAL STOREFRONTS</small><strong>One network.<br />Local details.</strong>
+          </div>
+          <div>
+            <h3>KW Flooring</h3>
+            <p>Supporting local storefront websites</p>
+            <p class="meta">Content updates · Multi-site support</p>
+            <span class="link">Explore case study →</span>
+          </div>
+          <span aria-hidden="true">↗</span></a
+        >
+
+        <!-- 05 ABOUT ME AND CONTACT -->
+        <section class="about" id="about-section">
+          <div>
+            <p class="eyebrow">About me</p>
+            <h2>A marketing background.<br />A systems mindset.</h2>
+          </div>
+          <div>
+            <p>
+              I’m Kate, a Cincinnati-based marketing and operations professional. At Grainworks, my
+              work connects event promotion, website content, and the practical details that help
+              people plan a visit.
+            </p>
+            <p>
+              I’m interested in the decisions behind an experience: what someone needs to know, who
+              keeps that information current, and how to make the next step easier. My background
+              also includes community administration, storefront website support, and healthcare
+              operations.
+            </p>
+            <div class="contactline">
+              <a href="mailto:kate.baldauf@gmail.com">Get in touch</a
+              ><a href="#resume">View résumé →</a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- 06 GRAINWORKS CASE STUDY — page copy and event demonstration -->
+      <section id="grainworks" class="view case" hidden>
+        <a class="back" href="#home">← Selected work</a>
+        <div class="casehead">
+          <p class="eyebrow">Grainworks Brewing Company</p>
+          <h1>Helping people plan a visit.</h1>
+          <p class="lead">
+            Event content has a practical job: help someone understand what’s happening and decide
+            whether to come.
+          </p>
+        </div>
+        <div class="facts">
+          <div>
+            <strong>My contribution</strong>Event page content and implementation, including
+            single-page experiences and supporting band pages.
+          </div>
+          <div>
+            <strong>Related work</strong>Website hours presentation, mobile spacing, and consistent
+            button sizing.
+          </div>
+        </div>
+
+        <!-- GRAINWORKS: wide/mobile controls and sample event page -->
+        <div class="viewerbar" aria-label="Preview width">
+          <span class="meta">View layout:</span
+          ><button type="button" data-width="wide" aria-pressed="true">Wide</button
+          ><button type="button" data-width="mobile" aria-pressed="false">Mobile</button>
+        </div>
+        <div class="event" id="event-demo">
+          <div class="eventnav">
+            <strong>GRAINWORKS</strong><span>Music / Food / Community</span>
+          </div>
+          <div class="eventhero">
+            <p class="eyebrow">Illustrative event page</p>
+            <h2>Live music<br />at Grainworks</h2>
+            <p>Music, pizza, and a reason to get out.</p>
+            <div class="essentials" id="essential-target">
+              <span>Saturday · 7 PM</span><span>Pizza available</span><span>West Chester</span>
+            </div>
+          </div>
+          <div class="eventactions">
+            <button class="button" id="visit-target" data-dialog="visit-dialog">
+              Plan your visit</button
+            ><button class="button secondary" id="band-target" data-dialog="band-dialog">
+              Meet the band
+            </button>
+          </div>
+        </div>
+        <p class="demo-label">
+          Illustrative reconstruction. Sample event details and generated venue image; not a live
+          event listing.
+        </p>
+
+        <!-- GRAINWORKS: expandable decision panel — changing click-through text also requires editing the decisions array below -->
+        <button
+          class="button walktoggle"
+          id="walk-toggle"
+          aria-expanded="false"
+          aria-controls="walk-panel"
+        >
+          See my decisions
+        </button>
+        <section class="walk" id="walk-panel" hidden>
+          <h2>Why organize it this way?</h2>
+          <div class="tabs" aria-label="Explore content decisions">
+            <button data-decision="0" aria-pressed="true">1 · Essentials</button
+            ><button data-decision="1" aria-pressed="false">2 · Band details</button
+            ><button data-decision="2" aria-pressed="false">3 · Next step</button>
+          </div>
+          <div class="explanation" aria-live="polite" aria-atomic="true">
+            <h3 id="decision-title">Answer the practical questions first.</h3>
+            <p id="decision-copy">
+              A visitor needs to know when it is, where to go, and whether food is available.
+              Keeping those details together helps them decide whether to come.
+            </p>
+          </div>
+        </section>
+        <div class="columns">
+          <section>
+            <h2>The actual work</h2>
+            <p>
+              Most of my Grainworks event pages were one long page. When an event needed additional
+              context, supporting pages—such as band pages—provided more detail.
+            </p>
+            <p>
+              I also worked through practical improvements to the existing WordPress site:
+              simplifying the hours display, removing an unnecessary heading, improving mobile
+              spacing, and correcting uneven button heights.
+            </p>
+          </section>
+          <section>
+            <h2>What this demonstrates</h2>
+            <ul>
+              <li>Organizing content around a visitor’s questions.</li>
+              <li>Choosing when to keep information together and when to link out.</li>
+              <li>Maintaining an inherited website and refining small usability details.</li>
+            </ul>
+            <p class="note">
+              The interactive example demonstrates my approach. It is not an archived screenshot or
+              a claim of measured conversion improvement.
+            </p>
+          </section>
+        </div>
+        <div class="caseend">
+          <a href="#home">← All work</a><a href="#miami">Next: community permissions →</a>
+        </div>
+      </section>
+
+      <!-- 07 MIAMI ESPORTS CASE STUDY — community story and role demonstration -->
+      <section id="miami" class="view case" hidden>
+        <a class="back" href="#home">← Selected work</a>
+        <div class="casehead">
+          <p class="eyebrow">Miami University Esports Club</p>
+          <h1>A community needs<br />clear ownership.</h1>
+          <p class="lead">
+            Running a Discord server with approximately 900 people meant deciding who could access
+            each space—and who was responsible for it.
+          </p>
+        </div>
+        <div class="facts">
+          <div>
+            <strong>My contribution</strong>Channel permissions based on club position, sport
+            affiliation, occasion, and other needs.
+          </div>
+          <div>
+            <strong>Responsibility</strong>Defining who maintained content, who moderated channels,
+            and how people participated.
+          </div>
+        </div>
+        <div class="walk">
+          <h2>Explore an example access model</h2>
+          <p class="rolecopy">Choose a role to see how access and responsibility can change.</p>
+          <div class="tabs" aria-label="Example community role">
+            <button data-role="member" aria-pressed="true">Member</button
+            ><button data-role="lead" aria-pressed="false">Sport lead</button
+            ><button data-role="moderator" aria-pressed="false">Moderator</button>
+          </div>
+          <div class="community">
+            <div>
+              <p class="eyebrow" id="role-label">Member</p>
+              <h3 id="role-title">A clear place to participate.</h3>
+              <p class="rolecopy" id="role-copy">
+                Members can find announcements and participate in relevant sport discussions without
+                needing access to planning or moderation spaces.
+              </p>
+            </div>
+            <ul class="channels" id="channel-list" aria-live="polite" aria-atomic="true"></ul>
+          </div>
+          <p class="demo-label">
+            Reconstructed demonstration; role names and channel rules are illustrative, not an
+            export of the original server.
+          </p>
+        </div>
+        <div class="columns">
+          <section>
+            <h2>More than permissions</h2>
+            <p>
+              Access was only one part of the job. The structure also needed people responsible for
+              maintaining content and moderating the spaces they knew best, largely organized by
+              sport.
+            </p>
+            <p>
+              That experience connects directly to distributed content ownership: a shared platform,
+              different audiences, and clear responsibilities.
+            </p>
+          </section>
+          <section>
+            <h2>What this demonstrates</h2>
+            <ul>
+              <li>Matching access to someone’s role and context.</li>
+              <li>Assigning content and moderation ownership.</li>
+              <li>Supporting engagement within a large community.</li>
+            </ul>
+            <p class="note">
+              The approximately 900-member figure describes community scale, not growth attributed
+              to my work.
+            </p>
+          </section>
+        </div>
+        <div class="caseend">
+          <a href="#grainworks">← Grainworks</a><a href="#flooring">Next: storefront content →</a>
+        </div>
+      </section>
+
+      <!-- 08 KW FLOORING CASE STUDY — supporting work and sample storefront structure -->
+      <section id="flooring" class="view case" hidden>
+        <a class="back" href="#home">← Selected work</a>
+        <div class="casehead">
+          <p class="eyebrow">KW Flooring</p>
+          <h1>Shared standards.<br />Local information.</h1>
+          <p class="lead">
+            A network of storefront websites needs consistent information while giving each location
+            room for its own details.
+          </p>
+        </div>
+        <div class="facts">
+          <div>
+            <strong>My contribution</strong>Helped update individual storefront websites during a
+            short tenure as Marketing Specialist.
+          </div>
+          <div>
+            <strong>Scope</strong>Content support within an existing network; I did not own the
+            overall website program.
+          </div>
+        </div>
+        <div class="store-demo">
+          <p class="eyebrow" style="color: #485c40">Illustrative content structure</p>
+          <h2>What needs to stay consistent?</h2>
+          <div class="store-grid">
+            <article class="store-card">
+              <h3>Storefront A</h3>
+              <p>Local information within a shared structure.</p>
+              <dl>
+                <dt>Visit</dt>
+                <dd>Address, hours, and directions</dd>
+                <dt>Explore</dt>
+                <dd>Products and services at this location</dd>
+                <dt>Contact</dt>
+                <dd>The right local team</dd>
+              </dl>
+            </article>
+            <article class="store-card">
+              <h3>Storefront B</h3>
+              <p>The same questions; location-specific answers.</p>
+              <dl>
+                <dt>Visit</dt>
+                <dd>Address, hours, and directions</dd>
+                <dt>Explore</dt>
+                <dd>Products and services at this location</dd>
+                <dt>Contact</dt>
+                <dd>The right local team</dd>
+              </dl>
+            </article>
+          </div>
+        </div>
+        <p class="demo-label">
+          Conceptual content model, not actual KW Flooring website screenshots.
+        </p>
+        <div class="columns">
+          <section>
+            <h2>The experience</h2>
+            <p>
+              I contributed website updates in a business with multiple storefront sites. That gave
+              me exposure to the practical work of supporting local information across a broader
+              brand network.
+            </p>
+            <p>
+              This is a supporting example of content maintenance and multi-site familiarity. My
+              contribution was narrower than designing or managing the network itself.
+            </p>
+          </section>
+          <section>
+            <h2>How I would review an update</h2>
+            <ul>
+              <li>Confirm the correct store and source information.</li>
+              <li>Check local contact details and destination links.</li>
+              <li>Review the update on mobile and desktop.</li>
+              <li>Identify who should maintain the information next.</li>
+            </ul>
+            <p class="note">
+              This checklist explains my approach; it is not presented as a historical KW process I
+              created.
+            </p>
+          </section>
+        </div>
+        <div class="caseend">
+          <a href="#miami">← Miami Esports</a><a href="#resume">View résumé →</a>
+        </div>
+      </section>
+
+      <!-- 09 RESUME — experience, dates, education, and tools -->
+      <section id="resume" class="view case resume-sheet" hidden>
+        <a class="back" href="#home">← Selected work</a>
+        <p class="eyebrow">Résumé overview</p>
+        <h1>Kate Baldauf</h1>
+        <p class="lead">Marketing operations · Website content · Community systems</p>
+        <p>Cincinnati, OH · <a href="mailto:kate.baldauf@gmail.com">kate.baldauf@gmail.com</a></p>
+        <button class="button print-btn" onclick="window.print()">Print / save as PDF</button>
+        <section>
+          <h2>Experience</h2>
+          <h3>Grainworks Brewing Company</h3>
+          <p class="meta">Marketing Operations & Creative Manager · March 2022–present</p>
+          <ul>
+            <li>
+              Manage marketing and event content, including website event pages and supporting band
+              pages.
+            </li>
+            <li>
+              Maintain and improve WordPress content presentation, including hours information,
+              mobile spacing, and button consistency.
+            </li>
+            <li>Connect event promotion, website information, and practical visitor needs.</li>
+          </ul>
+          <h3>Cincinnati Children’s</h3>
+          <p class="meta">Statline Operator · January 2026–present</p>
+          <ul>
+            <li>
+              Support emergency communications and EMS intake using established routing and
+              escalation procedures.
+            </li>
+          </ul>
+          <h3>KW Flooring</h3>
+          <p class="meta">Marketing Specialist · December 2021–March 2022</p>
+          <ul>
+            <li>
+              Contributed updates to individual storefront websites within a multi-brand business.
+            </li>
+          </ul>
+          <h3>Mercy Health Resource Optimization Center</h3>
+          <p class="meta">Nurse Staffing Scheduler · January–December 2021</p>
+          <ul>
+            <li>
+              Created an Excel-based tool to organize and retrieve staffing-matrix information
+              across seven hospitals.
+            </li>
+          </ul>
+          <h3>Miami University Esports Club</h3>
+          <p class="meta">Marketing Executive, volunteer · 2017–2019</p>
+          <ul>
+            <li>
+              Administered a Discord community of approximately 900 members, including channel
+              permissions, content ownership, and moderation responsibilities.
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Education & tools</h2>
+          <p>
+            BS, Business Marketing · Maryville University · 2021<br />Data Science concentration
+          </p>
+          <p>
+            WordPress · Basic HTML/CSS · Google Analytics · Mailchimp · Adobe Creative tools · Canva
+            · Excel
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <!-- 10 FOOTER — contact details -->
+    <footer>
+      <div class="wrap footerline">
+        <span>Kate Baldauf · Cincinnati, OH</span
+        ><a href="mailto:kate.baldauf@gmail.com">kate.baldauf@gmail.com</a>
+      </div>
+    </footer>
+
+    <!-- 11 EXAMPLE POP-UP PANELS — text shown by the event buttons -->
+    <dialog id="band-dialog" aria-labelledby="band-title">
+      <button class="close" aria-label="Close band example" data-close>Close</button>
+      <p class="eyebrow">Supporting-page example</p>
+      <h2 id="band-title">Meet the band</h2>
+      <p>
+        A supporting page could hold the artist’s bio, music samples, and other dates. Visitors who
+        want those details can explore without making the main event page longer for everyone.
+      </p>
+      <p class="note">
+        This panel represents a supporting band page. It is an illustrative interaction, not an
+        actual artist listing.
+      </p>
+      <button class="button" data-close>Back to the event</button>
+    </dialog>
+    <dialog id="visit-dialog" aria-labelledby="visit-title">
+      <button class="close" aria-label="Close visit example" data-close>Close</button>
+      <p class="eyebrow">Next-step example</p>
+      <h2 id="visit-title">Plan your visit</h2>
+      <p>
+        Once someone is interested, a useful next step connects them to directions, current hours,
+        and food information.
+      </p>
+      <p class="note">
+        This example stops here. A published event page would link to verified visitor information.
+      </p>
+      <button class="button" data-close>Back to the event</button>
+    </dialog>
+
+    <!-- 12 INTERACTIVE BEHAVIOR — page navigation, decision highlights, role switching, and pop-ups -->
+    <script>
+      // PAGE NAVIGATION — switches between the sections above.
+      const views = [...document.querySelectorAll(".view")];
+      function route() {
+        let id = location.hash.slice(1) || "home";
+        const about = id === "about";
+        if (about) id = "home";
+        if (!views.some((v) => v.id === id)) id = "home";
+        views.forEach((v) => (v.hidden = v.id !== id));
+        document.title =
+          id === "home"
+            ? "Kate Baldauf — Digital strategy & marketing operations"
+            : {
+                grainworks: "Grainworks",
+                miami: "Miami Esports",
+                flooring: "KW Flooring",
+                resume: "Résumé",
+              }[id] + " — Kate Baldauf";
+        if (about) {
+          document.getElementById("about-section").scrollIntoView();
+        } else {
+          window.scrollTo(0, 0);
+        }
+        if (location.hash) {
+          const heading = document.querySelector("#" + id + " h1");
+          heading.setAttribute("tabindex", "-1");
+          heading.focus({ preventScroll: true });
+        }
+      }
+      window.addEventListener("hashchange", route);
+      route();
+      // EDIT: GRAINWORKS DECISIONS
+      // Each entry contains: [target element ID, heading, explanation].
+      // Edit the heading and explanation; keep the target ID unchanged.
+      const decisions = [
+        [
+          "essential-target",
+          "Answer the practical questions first.",
+          "A visitor needs to know when it is, where to go, and whether food is available. Keeping those details together helps them decide whether to come.",
+        ],
+        [
+          "band-target",
+          "Give extra detail its own place.",
+          "Most event pages can stay focused on a single visit. A supporting band page gives interested visitors more context without making everyone scroll through it. Select “Meet the band” to see a simple example.",
+        ],
+        [
+          "visit-target",
+          "Make the next action easy to find.",
+          "Once someone is interested, direct them toward practical visitor information. A clear next step connects the event to directions, hours, and food details. Select “Plan your visit” to see what that step could contain.",
+        ],
+      ];
+      // DECISION CONTROLS — connects the buttons to the explanations above.
+      function decision(i) {
+        document.querySelectorAll(".highlight").forEach((e) => e.classList.remove("highlight"));
+        document.getElementById(decisions[i][0]).classList.add("highlight");
+        document.getElementById("decision-title").textContent = decisions[i][1];
+        document.getElementById("decision-copy").textContent = decisions[i][2];
+        document
+          .querySelectorAll("[data-decision]")
+          .forEach((b) => b.setAttribute("aria-pressed", String(+b.dataset.decision === i)));
+      }
+      document
+        .querySelectorAll("[data-decision]")
+        .forEach((b) => b.addEventListener("click", () => decision(+b.dataset.decision)));
+      document.getElementById("walk-toggle").addEventListener("click", (e) => {
+        const p = document.getElementById("walk-panel");
+        p.hidden = !p.hidden;
+        e.currentTarget.setAttribute("aria-expanded", String(!p.hidden));
+        e.currentTarget.textContent = p.hidden ? "See my decisions" : "Hide decisions";
+        if (!p.hidden) decision(0);
+        else
+          document.querySelectorAll(".highlight").forEach((x) => x.classList.remove("highlight"));
+      });
+      document.querySelectorAll("[data-width]").forEach((b) =>
+        b.addEventListener("click", () => {
+          document
+            .getElementById("event-demo")
+            .classList.toggle("mobile-preview", b.dataset.width === "mobile");
+          document
+            .querySelectorAll("[data-width]")
+            .forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+        }),
+      );
+      // EDIT: MIAMI ROLE EXAMPLES
+      // Each role contains: [label, heading, explanation, four channel permissions].
+      // Permission order: announcements, sport-discussion, event-planning, moderation.
+      // These are illustrative examples, not historical server records.
+      const roleData = {
+        member: [
+          "Member",
+          "A clear place to participate.",
+          "Members can find announcements and participate in relevant sport discussions without needing access to planning or moderation spaces.",
+          ["Read", "Participate", "No access", "No access"],
+        ],
+        lead: [
+          "Sport lead",
+          "Ownership close to the activity.",
+          "A sport lead can maintain relevant discussions and coordinate events. Responsibility is assigned to someone who understands the group.",
+          ["Read", "Maintain", "Coordinate", "No access"],
+        ],
+        moderator: [
+          "Moderator",
+          "Authority with a defined purpose.",
+          "Moderators can manage conversations and access moderation spaces. In practice, permissions can be combined with a sport or leadership role.",
+          ["Read", "Moderate", "No access", "Manage"],
+        ],
+      };
+      // ROLE CONTROLS — displays the selected role and its channel permissions.
+      function role(k) {
+        const d = roleData[k];
+        document.getElementById("role-label").textContent = d[0];
+        document.getElementById("role-title").textContent = d[1];
+        document.getElementById("role-copy").textContent = d[2];
+        const list = document.getElementById("channel-list");
+        list.replaceChildren();
+        ["announcements", "sport-discussion", "event-planning", "moderation"].forEach((n, i) => {
+          const li = document.createElement("li");
+          const name = document.createElement("span");
+          name.textContent = "# " + n;
+          const access = document.createElement("small");
+          access.textContent = d[3][i];
+          li.append(name, access);
+          li.classList.toggle("locked", d[3][i] === "No access");
+          list.append(li);
+        });
+        document
+          .querySelectorAll("[data-role]")
+          .forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.role === k)));
+      }
+      document
+        .querySelectorAll("[data-role]")
+        .forEach((b) => b.addEventListener("click", () => role(b.dataset.role)));
+      role("member");
+      // POP-UP CONTROLS — opens and closes the two event examples.
+      document
+        .querySelectorAll("[data-dialog]")
+        .forEach((b) =>
+          b.addEventListener("click", () => document.getElementById(b.dataset.dialog).showModal()),
+        );
+      document
+        .querySelectorAll("[data-close]")
+        .forEach((b) => b.addEventListener("click", () => b.closest("dialog").close()));
+    </script>
+  </body>
+</html>
